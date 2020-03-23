@@ -1,0 +1,3 @@
+appplications f queue:
+    single resource multiple consumers
+    synchronise fast and slow devices,we use buffer (which is a queue)

@@ -1,0 +1,10 @@
+Applications of stack are:
+Function calls are implemened using stack
+check for balanced parenthesis
+Reversing item
+Infix to prefix/postfix
+evaluation of postfix/prefix
+stack spam problem
+Next greater problem
+undo/redo
+forward/backward
