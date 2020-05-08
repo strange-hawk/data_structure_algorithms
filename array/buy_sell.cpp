@@ -1,5 +1,7 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
+
 struct Interval
 {
     int buy;
@@ -29,6 +31,8 @@ void buysell(int arr[],int n)
         cout<<sol[i].buy<<" "<<sol[i].sell<<"\n";
     }
 }
+
+
 int main()
 {
     int arr[10]={100, 180, 260, 310, 40, 535, 695};

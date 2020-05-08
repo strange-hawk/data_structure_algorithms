@@ -1,0 +1,31 @@
+application of tree:
+- hierarchical data
+    organisational data
+    folder structure
+    XML/HTML content
+    In OOP
+
+- binary search tree
+- binary heap
+- B and B+ tree in DBMS
+- spanning and shortest path trees in computer networks
+- parse tree, expansion tree in compiler
+- trie 
+- suffix tree -> for pattern searching
+- binary  search tree -> query searches within range ; faster for limited searches
+- segment tree -> query searches
+
+
+
+Binary Tree
+every node has atmost 2 children
+binary search tree is variation of binary tree
+most of the practical tree are binary trees
+
+Tree traversal
+means printing every key of the tree every once
+Breadth first (or level order)
+Depth first - we move to one side of tree, traverse all the keys and then move to other side
+- inorder -> left root right , complexity -> O(n)
+- preorder -> root left right, complexity -> O(n)
+- postorder -> left right root, complexity -> O(n)

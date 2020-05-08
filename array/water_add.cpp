@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// logic - min(lmax,rmax) - arr[i]
 long int func(int arr[],int n)
 {
     int left[n];

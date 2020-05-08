@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main()
 {
@@ -30,4 +31,8 @@ int main()
         }
         l++;}
     }
+}
+int main(){
+    vector<int> vec;
+    vec.size();
 }
