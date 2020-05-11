@@ -25,6 +25,9 @@ long int ranks(string str)
     }
     return count;
 }
+
+// make frequency array of each character
+// build cumulative charatacter - no. of characters smaller than or equal to that character
 int main()
 {
     string str;

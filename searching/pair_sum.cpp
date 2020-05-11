@@ -21,6 +21,10 @@ int sum(int arr[],int n,int x)
     return 0;
 }
 
+// for unsorted we can use hashing
+// storing the element in a (hash table / unordered set) and then search for the existence of (sum-arr[i])
+
+
 int main()
 {
     int arr[]={2,4,8,9,11,12,20,30};
