@@ -1,0 +1,10 @@
+to get the 2's compliemnt of x in n bit representation
+->  2^n - x
+
+to compute ~5 where 5 is signed
+-> 2^32 - 1 (if all the 32 bit were 1) - 5
+-> comp. it with 2^n - x
+-> -6
+-> left shift/right shift of signed numbers is generally not recommended because it is undefined (compiler dependant)
+-> similarly tilde operator is not recommended
+-> 2's compliemnt is compiler dependant
