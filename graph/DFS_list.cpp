@@ -26,6 +26,9 @@ int main(){
     vec[5].push_back(2);
     vec[5].push_back(4);
     vec[6].push_back(2);
-    bool visited[] = {false,false,false,false,false,false,false};
+    bool visited[7] = {false};
     DFS(vec,7,1,visited);
 }
+
+// for disconnected same as that of bfs
+// to count islands, same as count parameter in that of bfs

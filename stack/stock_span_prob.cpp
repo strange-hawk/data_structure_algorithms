@@ -1,4 +1,5 @@
 #include <bits/stdc++.h> 
+#include<stack>
 using namespace std;  
   
 // Fills array S[] with span values  
@@ -27,7 +28,38 @@ void printArray(int arr[], int n)
     for (int i = 0; i < n; i++)  
         cout << arr[i] << " ";  
 }  
-  
+
+
+
+
+// find the next greater elemnt on the left side of index
+// idea - for every element of the the array, compare it with the top of stack
+//          if it is smaller than the top, we push it
+//          else we keep removing all the greater elements
+//          immediate answer is i - s.top()+1
+
+// why we use stack because we want immediate larger element
+
+// from top to bottom the stack is increasing, assuming top at top
+
+void calculateSpan(int price[], int n, int S[]){
+    stack<int> s;
+    s.push(0);
+    S[0]=1;
+    for(int i=1;i<n;i++){
+        while(!s.empty() && price[i]>price[s.top()]){
+            s.pop();
+        }
+        // s.top() is the index of previous greater element
+        S[i] = s.empty()==true ? i+1 : i-s.top();
+        s.push(i);
+    }
+}
+
+
+
+
+
 // Driver code  
 int main()  
 {  

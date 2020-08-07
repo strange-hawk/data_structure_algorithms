@@ -1,6 +1,6 @@
 #include<bits/stdc++.h> 
 using namespace std; 
-  
+// precedence, associativity
 //Function to return precedence of operators 
 int prec(char c) 
 { 
