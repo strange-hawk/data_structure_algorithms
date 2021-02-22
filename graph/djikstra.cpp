@@ -13,6 +13,7 @@ void addEdge(vector <pair<int, int> > adj[], int u, int v, int wt)
 void shortestpath(vector<pair<int,int> > vec[],int s){
     priority_queue<ipair, vector<ipair>, greater<ipair> > makeheap;
     vector<int> dist(9,INT_MAX);
+    vector<int> k(10,0);
     // inside minheap pair is <weight,vertex> but inside main it is pair<vertex,weight>
     makeheap.push(make_pair(0,s));
     dist[s]=0;

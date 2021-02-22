@@ -32,12 +32,12 @@ int ed(string s1,string s2,int m,int n){
 
 int ed(string s1, string s2, int m, int n){
     int dp[m+1][n+1];
-    mamset(dp,0,sizeof(dp));
+    memset(dp,0,sizeof(dp));
     for (int i=0;i<=m;i++){
         for(int j=0;j<=n;j++){
             if(i==0){
                 dp[i][j]=j;
-            }
+            }f
             if(j==0){
                 dp[i][j]=i;
             }
